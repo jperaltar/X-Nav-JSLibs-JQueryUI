@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./index.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div id="header">
+      <h1>Fake  <img src="http://logonoid.com/images/kayak-logo.png" alt="KAYAK" /></h1>
+    </div>
+    <div id="tabs">
+      <ul>
+        <li><a href="#tabs-1">Description</a></li>
+        <li><a href="#tabs-2">Find your flight</a></li>
+        <li><a href="#tabs-3">Filters</a></li>
+      </ul>
+      <div id="tabs-1">
+        <div id="accordion">
+          <h3>Easy</h3>
+          <div>
+            <p>
+            Select your flight use your filters and you are done.
+            Find the best price.
+            </p>
+          </div>
+          <h3>Cheap</h3>
+          <div>
+            <p>
+            We compare in multiple websites to give you the best price possible.
+            </p>
+          </div>
+          <h3>Fast</h3>
+          <div>
+            <p>
+            You will have a complete selection of flights in a few seconds.
+            </p>
+          </div>
+          <h3>So...</h3>
+          <div>
+            <p>
+            What are you waiting for?
+            </p>
+            <ul>
+              <li>Pick a destiny</li>
+              <li>Pick a date</li>
+              <li>Buy it!</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="tabs-2">
+        <div class="ui-widget">
+          <label for="departure">Departure: </label>
+          <input id="departure" class="city">
+          <label for="arrival">Arrival: </label>
+          <input id="arrival" class="city">
+          <br>
+          <label for="startTime">Start date: </label>
+          <input id="startTime" class="date">
+          <label for="endTime">End date: </label>
+          <input id="endTime" class="date">
+          <br>
+          <label for="passengers">Passengers: </label>
+          <input id="passengers">
+        </div>
+      </div>
+      <div id="tabs-3">
+        <p>
+          Order by:
+        </p>
+        <ol id="selectable">
+          <li class="ui-widget-content">Cheapest</li>
+          <li class="ui-widget-content">Direct</li>
+          <li class="ui-widget-content">1 Scale</li>
+          <li class="ui-widget-content">+2 Scales</li>
+        </ol>
+      </div>
+    </div>
+  </body>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="/index.js" charset="utf-8"></script>
+</html>
